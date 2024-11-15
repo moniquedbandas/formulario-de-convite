@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@700&family=Leckerli+One&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <title>Formulário de convite</title>
+    <link rel="stylesheet" href="styles/index.css">
+</head>
+
+<body>
+
+    <div id="app">
+        <aside>
+            <div class="aside-container">
+                <img src="assets/Logo.svg" alt="conezinho">
+                <h1 class="logo">Festivite</h1>
+                <p>Crie um convite digital para seu evento</p>
+            </div>
+        </aside>
+
+        <main>
+
+            <div class="main-container">
+
+                <h1>Crie seu convite</h1>
+                <form action="" enctype="multipart/form-data" method="post">
+                    <fieldset class="event-info">
+                        <div class="titulo-wrapper mtop flex">
+                            <img src="/assets/icons/calendar.png" alt="Imagem de um calendário">
+                            <legend>Sobre o evento</legend>
+                        </div>
+                        <div class="title">
+                            <label for="titulo">Título</label>
+                            <input type="text" id="titulo" name="titulo" placeholder="Nome do evento">
+                        </div>
+                        <div class="flex">
+                            <div class="input-wrapper flex-1 gap-1">
+                                <label for="inicio">Início</label>
+                                <input type="date" id="inicio" name="inicio" lang="pt-BR">
+                            </div>
+                            <div class="input-wrapper flex-1">
+                                <label for="fim">Fim</label>
+                                <input type="date" id="fim" name="fim" lang="pt-BR">
+                            </div>
+                        </div>
+                        <div class="flex">
+                            <div class="input-wrapper flex-1">
+                                <label>Tipo</label>
+                                <div class="radio-flex">
+                                    <div class="radio-inner">
+                                        <img src="assets/icons/building-2.png" alt="predio">
+                                        <label for="presencial">Presencial</label>
+                                        <input type="radio" name="tipo" value="presencial" id="presencial">
+                                    </div>
+                                    <div class="radio-inner">
+                                        <img src="assets/icons/video.png" alt="camera">
+                                        <label for="online">Online</label>
+                                        <input type="radio" name="tipo" value="online" id="online">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="input-wrapper flex-1">
+                                <label for="local">Local</label>
+                                <input type="text" id="local" name="local" placeholder="Local do evento">
+                            </div>
+                        </div>
+                    </fieldset>
+                    <section class="imagens">
+                        <fieldset class="personalizacao">
+                            <div class="titulo-wrapper mtop flex">
+                                <img src="/assets/icons/paintbrush-vertical.png" alt="pincel">
+                                <legend>Personalização</legend>
+                            </div>
+                            <div class="title">
+                                <label for="cor">Cor principal</label>
+                                <img src="/assets/icons/Items.png" alt="barra de cores">
+                            </div>
+                            <div class="images-wrapper">
+                                <label for="separador" class="separador">Tema do evento</label>
+                                <div class="cards-image separador-2">
+                                    <div class="card">
+                                        <img src="/assets/images/Image.png" alt="aniversário">
+                                        <label for="tag" class="tag">Aniversário</label>
+                                    </div>
+                                    <div class="card">
+                                        <img src="/assets/images/Image-1.png" alt="infantil">
+                                        <label for="tag" class="tag">Infantil</label>
+                                    </div>
+                                    <div class="card">
+                                        <img src="/assets/images/Image-2.png" alt="formatura">
+                                        <label for="tag" class="tag">Formatura</label>
+                                    </div>
+                                    <div class="card">
+                                        <img src="/assets/images/Image-3.png" alt="casamento">
+                                        <label for="tag" class="tag">Casamento</label>
+                                    </div>
+                                    <div class="card">
+                                        <img src="/assets/images/Image-4.png" alt="chá-de-bebê">
+                                        <label for="tag" class="tag">Chá de bebê</label>
+                                    </div>
+                                    <div class="card">
+                                        <img src="/assets/images/Image-5.png" alt="chá-de-panela">
+                                        <label for="tag" class="tag">Chá de panela</label>
+                                    </div>
+                                    <div class="card">
+                                        <img src="/assets/images/Image-6.png" alt="carnaval">
+                                        <label for="tag" class="tag">Carnaval</label>
+                                    </div>
+                                    <div class="card">
+                                        <img src="/assets/images/Image-7.png" alt="pascoa">
+                                        <label for="tag" class="tag">Páscoa</label>
+                                    </div>
+                                    <div class="card">
+                                        <img src="/assets/images/Image-8.png" alt="sao-joao">
+                                        <label for="tag" class="tag">São João</label>
+                                    </div>
+                                    <div class="card">
+                                        <img src="/assets/images/Image-9.png" alt="halloween">
+                                        <label for="tag" class="tag">Halloween</label>
+                                    </div>
+                                    <div class="card">
+                                        <img src="/assets/images/Image-10.png" alt="natal">
+                                        <label for="tag" class="tag">Natal</label>
+                                    </div>
+                                    <div class="card">
+                                        <img src="/assets/images/Image-11.png" alt="Outro">
+                                        <label for="tag" class="tag">Outro</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="file-wrapper">
+                                <label for="separador" class="separador">Foto de capa</label>
+                                <div class="dropzone separador-2">
+                                    <div class="bt-drop ">
+                                        <input type="file" id="capa" name="capa">
+                                        <img src="assets/icons/upload.png" alt="uploadzinho">
+                                        <p>Selecionar</p>
+                                    </div>
+                                    <p>Nenhum arquivo selecionado</p>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </section>
+
+                    <section class="info-contato">
+                        <fieldset class="info">
+                            <div class="titulo-wrapper mtop flex">
+                                <img src="assets/icons/contact.png" alt="contato">
+                                <legend>Dados para contato</legend>
+                            </div>
+                            <div class="campo-nome">
+                                <label for="name">Nome</label>
+                                <input type="text" id="name" name="name" placeholder="Nome completo" required>
+                                <div class="error">
+                                    <img src="assets/icons/circle-alert.png" alt="ícone de alerta vermelho">
+                                    <span>Campo obrigatório</span>
+                                </div>
+                            </div>
+                            <div class="campo-contato">
+                                <label for="email">E-mail</label>
+                                <input type="email" name="email" id="email" placeholder="exemplo@email.com">
+                                <label for="telefone">Telefone</label>
+                                <input type="text" id="telefone" name="telefone" placeholder="(xx) 9 8765-4321">
+                            </div>
+                        </fieldset>
+                    </section>
+
+                    <section class="area-termos">
+                        <div class="terms-wrapper mtop checkbox-wrapper">
+                            <div class="checkbox-image"></div>
+                            <input type="checkbox" name="terms" id="terms">
+                            <label for="terms">Li e concordo com os <strong>Termos e Condições</strong> e com a
+                                <strong>Política de Privacidade</strong></label>
+                        </div>
+                        <div class="terms-wrapper checkbox-wrapper">
+                            <div class="checkbox-image"></div>
+                            <input type="checkbox" name="terms2" id="terms2">
+                            <label for="att-email">Aceito receber atualizações e promoções por e-mail</label>
+                        </div>
+                        <div class="terms-wrapper checkbox-wrapper">
+                            <div class="checkbox-image"></div>
+                            <input type="checkbox" name="terms3" id="terms3">
+                            <label for="att-sms">Aceito receber atualizações e promoções por SMS</label>
+                        </div>
+                    </section>
+
+                    <div class="bt-wrapper mtop">
+                        <button class="footer" type="submit">
+                            <img src="assets/icons/ticket.png" alt="ticket">
+                            Gerar convite
+                        </button>
+                    </div>
+                </form>
+
+            </div>
+
+        </main>
+    </div>
+
+</body>
+
+</html>

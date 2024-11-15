@@ -1,0 +1,20 @@
+fieldset {
+  border: none;
+
+  & .titulo-wrapper {
+    align-items: center;
+    height: 48px;
+    gap: 12px;
+    font: 700 1.125rem/1 var(--font-header-form);
+    color: var(--text-heading);
+  }
+}
+
+legend {
+  font: var(--text-form);
+  color: var(--text-body);
+}
+
+fieldset + fieldset {
+  margin-top: 48px;
+}

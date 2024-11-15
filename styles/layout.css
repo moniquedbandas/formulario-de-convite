@@ -1,0 +1,47 @@
+#app {
+  display: grid;
+  grid-template-columns: 32% 68%;
+  background-color: var(--shape-background);
+  height: 100vh;
+  overflow: hidden;
+}
+
+main {
+  margin-top: 20px;
+  overflow: auto;
+  padding: 0 8.125rem;
+  background-color: var(--shape-body);
+  border-radius: 0.5rem;
+  & .main-container {
+    max-width: 35rem;
+  }
+  & h1 {
+    margin-top: 5rem;
+    font: var(--text-form);
+    color: var(--text-heading);
+  }
+
+  & .form {
+    margin-top: 2.5rem;
+  }
+}
+
+aside {
+  background: url(../assets/Background.png) center/cover no-repeat;
+  border-radius: 1rem;
+  margin: 20px;
+
+  & .aside-container {
+    padding: 4rem;
+  }
+  & h1 {
+    font: var(--text-logo);
+    color: var(--pink);
+    margin-top: 1rem;
+  }
+  & p {
+    margin-top: 1rem;
+    color: var(--text-heading);
+    font: var(--text-p);
+  }
+}
