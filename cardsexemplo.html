@@ -63,3 +63,41 @@
         </div>
     </div>
 </div>
+
+<form id="gallery-form">
+    <div class="gallery">
+        <label>
+            <input type="radio" name="photo" value="photo1">
+            <img src="foto1.jpg" alt="Foto 1">
+        </label>
+        <label>
+            <input type="radio" name="photo" value="photo2">
+            <img src="foto2.jpg" alt="Foto 2">
+        </label>
+        <!-- Repetir para as outras 10 fotos -->
+    </div>
+    <button type="submit">Enviar</button>
+</form>
+
+.gallery {
+display: flex;
+flex-wrap: wrap;
+}
+
+.gallery label {
+margin: 10px;
+cursor: pointer;
+}
+
+.gallery input[type="radio"] {
+display: none; /* Esconde o input de rádio */
+}
+
+.gallery img {
+border: 2px solid transparent;
+transition: border 0.3s;
+}
+
+.gallery input[type="radio"]:checked + img {
+border: 2px solid blue; /* Adiciona uma borda quando a foto é selecionada */
+}

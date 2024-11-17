@@ -1,25 +1,10 @@
-.cards-image {
+/* .cards-image {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   gap: 8px;
-}
+} */
 
-.card {
-  display: flex;
-  flex-direction: column;
-  padding: 2px 2px 6px;
-  width: 134px;
-  height: 103px;
-  background: var(--shape-button);
-  border: 1px solid var(--input-stroke);
-  border-radius: 8px;
-
-  & label {
-    font: var(--text-p);
-    text-align: center;
-  }
-}
 .separador {
   margin-top: 28px;
 }
