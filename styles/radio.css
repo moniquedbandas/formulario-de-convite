@@ -67,7 +67,7 @@
     text-align: center;
   }
   &:has(:checked) {
-    border: 2px solid var(--input-placeholder);
+    border: 2px solid var(--brand-light);
     padding: 0;
   }
 }
