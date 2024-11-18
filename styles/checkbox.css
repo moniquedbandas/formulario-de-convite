@@ -43,11 +43,14 @@
 }
 .footer {
   background-color: var(--brand-dark);
+  border: none;
+  border-radius: 8px;
   padding: 14px;
   width: 177px;
   height: 48px;
-  border-radius: 8px;
   display: flex;
   align-items: center;
   gap: 12px;
+  font: 600 1rem/1 var(--font-p);
+  color: var(--text-heading);
 }
